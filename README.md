@@ -13,7 +13,7 @@
 - You can add this to your tree by doing this command
 
 ```bash
-git subtree add --prefix docker/ https://github.com/cyberknight777/android_kernel_docker main
+git subtree add --prefix=docker https://github.com/cyberknight777/android_kernel_docker main
 ```
 
 - Then go to arch/yourtargetarchitecture/Kconfig and add this line below:
