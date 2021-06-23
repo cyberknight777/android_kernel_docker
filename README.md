@@ -20,7 +20,7 @@ git subtree add --prefix docker/ https://github.com/cyberknight777/android_kerne
 
 > source "docker/Kconfig"
 
-- Next you would need to enable all the options in Utilities except for this one: 
+- Next you would need to enable all the options in Utilities except for this one(if you use SLMK): 
 
 > CONFIG_DOCKER_SWAP
 
