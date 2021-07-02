@@ -194,8 +194,8 @@ config DOCKER_SWAP
 	help
 
 		Yes if you want to be able to limit swap usage of containers
-
-
+	
+	select MEMCG
 
 	select MEMCG_SWAP
 
