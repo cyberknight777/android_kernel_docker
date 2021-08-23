@@ -22,10 +22,13 @@ A repository that contains a kconfig to enable docker support in android kernels
 
 =CONFIG_MEMCG_SWAP=
 
-** You can add this to your tree by doing this command
+** You can add this to your tree by doing these commands
 
 #+BEGIN_SRC shell
-git subtree add --prefix=docker https://github.com/cyberknight777/android_kernel_docker main
+git fetch https://github.com/cyberknight777/android_kernel_docker main
+git merge -s ours --no-commit --allow-unrelated-histories --squash FETCH_HEAD
+git read-tree --prefix=docker -u FETCH_HEAD
+git commit -m "Imported docker/ from https://github.com/cyberknight777/android_kernel_docker"
 #+END_SRC
 
 ** Then go to arch/yourtargetarchitecture/Kconfig and add this line below:
