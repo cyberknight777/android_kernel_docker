@@ -88,6 +88,10 @@ config DOCKER
 
 	select CPUSETS
 
+	select BLOCK
+
+	select BLK_CGROUP
+
 	select BLK_DEV_THROTTLING
 
 	select KEYS
